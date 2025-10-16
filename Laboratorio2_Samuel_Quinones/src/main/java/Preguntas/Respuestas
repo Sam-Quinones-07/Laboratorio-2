@@ -1,0 +1,12 @@
+a) Si no se hubiera implementado una interfaz, en este caso SistemaTarifario, tendriamos que crear las
+   funciones de mostrarRuta y calcularTarifa dentro de cada uno de los tipos de transporte que se quieran
+   agregar, ademas, tambien se tendria que crear una funcion de procesarViaje para cada uno de los transportes.
+   En este caso como solo se creo la clase BusArticulado y la clase Teleferico hubieramos tenido que crear 2 funciones,
+   la funcion procesarViajeBusArticulado y la funcion procesarViajeTeleferico.
+
+b) Dentro de el sistema de control no se tendria que modificar nada, solo dentro del paquete control se crea la clase TrenLigero
+   que implementa a SistemaTarifario, se modifica su calcularTarifa y su mostrarRuta para que cumpla con lo necesitado y y ya quedaria 
+   listo para usarse con la clase actual que tenemos. Solo faltaria crear un objeto de tipo trenLigero y llamar a procesarViaje dentro del main.
+   
+c) Como dice en el taller, la interfaz es la que define que es lo que se debe hacer estableciendo los mètodos que las clases deben implementar. Las
+   clases especificas definen el coso se debe usar, implementando los metodos de la interfaz pero aplicando la lògica particular de cada tipo de transporte.

@@ -1,0 +1,10 @@
+1) Principalmente se modificaria el modelo, en este caso se modificaria el MedicamentosDao
+   para integrar la base de datos, cambiar metodos para que interactuen con la base de datos.
+
+2) Se modificaria la capa de vista la cual es nuestra interfas gràfica y se podrian reutilizar el modelo
+   que en la misma guia nos dicen que no tiene ninguna dependencia, y una que otra cosa del controlador.
+
+3) No en el patròn MVC ya que cada uno de los paquetes tiene su responsabilidad.
+   Como nos decia la misma guia, el modelo se encarga de contener la informacion y
+   la logica, la vista meneja la entrada y salida, el control conecta el modelo y la vista.
+   Ademas crearia una dependencia entre modelo - vista y el modelo no tiene dependencias.
